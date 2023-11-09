@@ -32,7 +32,7 @@ int value = 0;
 
 void loop() {
   // Proses Pengiriman -----------------------------------------------------------
-  delay(10000);
+  delay(1000);
   ++value;
 
   // Membaca Sensor Analog -------------------------------------------------------
@@ -66,7 +66,7 @@ void loop() {
                "Connection: close\r\n\r\n");
   unsigned long timeout = millis();
   while (client.available() == 0) {
-    if (millis() - timeout > 1000) {
+    if (millis() - timeout > 10000) {
       Serial.println(">>> Client Timeout !");
       client.stop();
       return;
