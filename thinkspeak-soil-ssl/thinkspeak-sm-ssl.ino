@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 
 //Konfigurasi WiFi
-const char *ssid = "Infinix NOTE 30 Pro";
-const char *password = "d0d0lg4rut";
+const char *ssid = "warriornux.com";
+const char *password = "c0c0d0tb4u";
 
 //IP Address Server Thinkspeak
 const char *host = "api.thingspeak.com";
